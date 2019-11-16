@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 60%;
+  margin:auto;
+}
+
+.img-size h2 {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+}
+
+.layover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.img-size {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.atri {
+  background-image: url(../img/atri.jpg);
+}
+
+.silvi-p {
+  background-image: url(../img/silvi-p.jpg);
+}
+
+.pineto {
+  background-image: url(../img/pineto.jpg);
+}
