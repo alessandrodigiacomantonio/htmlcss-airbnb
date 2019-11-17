@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #1e2d3c;
+}
+
+body {
+  background-color: #1e2d3c;
+}
+
+#container {
+  width: 60%;
+  margin:auto;
+  text-align: center;
+  margin-top: 14vh;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  background-color: grey;
+  text-align: center;
+  z-index: 1;
+  top:0;
+}
+
+nav img {
+  height: 6vh;
+  vertical-align: middle;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+  line-height: 8vh;
+  vertical-align: middle;
+  font-variant: small-caps;
+  font-family: 'Merriweather', serif;
+}
+
+nav li:hover:not(#logo) {
+  background-color: lightgrey;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section h2 {
+  color: white;
+  font-family: 'Fredericka the Great';
+  text-shadow: 7px 7px 10px white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section:after {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 70%;
+  /* width: 30vw; */
+  /* transform: translateX(-20%); */
+  font-family: 'Fredericka the Great';
+  text-align: justify;
+  color: rgba(255, 255, 255, 0);
+  content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum, odio. Doloribus quasi eveniet alias non nobis deserunt dolorem, ut, dolores nemo neque eaque aliquam earum pariatur quos eos laudantium.Totam deserunt perspiciatis, eum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempore qui";
+}
+
+section:hover:after {
+  transition: 3.3s;
+  transition-delay: 1s;
+  color: rgba(255, 255, 255, 1);
+  /* width: 30vw; */
+  /* transform: translateX(-20%); */
+}
+
+section:hover h2 {
+  display: none;
+  /* font-size: 40px;
+  text-shadow: none;
+  background-color: #1E2D3C;
+  border-radius: 200px;
+  padding:10px;
+  color: lightgrey; */
+}
+section:hover .layover {
+  background: none;
+}
+section:hover .img-size{
+  box-shadow: none;
+  border-radius: 40% 0% 40% 40%;
+  transition: 3s;
+  left: 0;
+  width: 20vw;
+}
+
+.layover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.img-size {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  cursor: pointer;
+  box-shadow: 18px 5px 20px -15px white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  height: 150px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  text-align: center;
+  line-height: 150px;
+  vertical-align: middle;
+}
+
+.atri {
+  background-image: url(../img/atri.jpg);
+}
+
+.silvi-p {
+  background-image: url(../img/silvi-p.jpg);
+}
+
+.pineto {
+  background-image: url(../img/pineto.jpg);
+}
